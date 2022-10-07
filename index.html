@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XD</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="todo-title">XD To-Do List</div>
+        <div class="todo-time">0000.0.0.() 00:00:00</div>
+        <div class="todo-box">
+            <div class="todo-input-box">
+                <button class="complete-all-btn">✔</button>
+                <input type="text" id="todo-input" placeholder="할 일을 입력해주세요." onkeypress="javascript:if(event.keyCode==13) {addTodo();}">
+                <button class="input-button">+</button>
+            </div>
+            <ul class="todo-ul">
+            </ul>
+            <div class="todo-bottom">
+                <div class="button-group">
+                    <button class="all-btn" data-type="all">All</button>
+                    <button class="active-btn" data-type="active">Active</button>
+                    <button class="completed-btn" data-type="completed">Completed</button>
+                </div>
+                <button class="clear-completed-btn">Clear Completed</button>
+            </div>
+        </div>
+        <p class="info">더블클릭 시 수정 가능!</p>
+    </div>
+    <!--JavaScript-->
+    <script src="./js/daytime.js"></script>
+    <script src="./js/todolist.js"></script>
+</body>
+</html>
